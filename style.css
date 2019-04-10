@@ -9,78 +9,71 @@ div#list.todo {
   padding: 10px 10px 10px 10px;
 }
 
-li {  
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+li {
+  margin-bottom: 5px;
+  font-family: Verdana, Tahoma, sans-serif;
   font-size: 17px;
   color: #ffffff;
-  background: #f80303;
-}
-.hr1 {
-margin: 0;
-padding: 0;
-height: 2px;
-}
-
-.button-square {
-  position: absolute;
-  margin: 10px 0 0 -185px;
-
   padding: 10px 10px 10px 10px;
-  background: #ef6e69;
 }
 
-#li {
+.hr1 {
+  margin: 0;
+  padding: 0;
+  height: 2px;
+}
 
-  margin: 12px 24px 12px 24px;
+.checkbox1 {
+  margin: 14px 10px 10px 10px;
+  float: left;
+}
+
+.li {
+  position: relative;
   font-family: Verdana, Tahoma, sans-serif;
   font-size: 17px;
 }
 
+.button-square {
+  position: absolute;
+  margin: 13px 0 0 -180px;
+  padding: 7px 7px 7px 7px;
+  /* background-color: #ef6e69; */
+}
+
 .button-square2 {
   position: absolute;
-  margin: 10px 0 0 -155px;
-  padding: 10px 10px 10px 10px;
-  background: #f379a2;
+  margin: 13px 0 0 -155px;
+  padding: 7px 7px 7px 7px;
+  /* background: #f379a2; */
 }
 
 .button-square3 {
   position: absolute;
-  margin: 10px 0 10px -125px;
-  padding: 10px 10px 10px 10px;
-  background: #9170cb;
+  margin: 13px 0 10px -130px;
+  padding: 7px 7px 7px 7px;
+  /* background: #9170cb; */
 }
 
 .button-square4 {
   position: absolute;
-  margin: 10px 0 10px -95px;
-  padding: 10px 10px 10px 10px;
-  background: #5eb3f6;
+  margin: 13px 0 10px -105px;
+  padding: 7px 7px 7px 7px;
+  /* background: #5eb3f6; */
 }
 
 .button-square5 {
   position: absolute;
-  margin: 10px 0 10px -65px;
-  padding: 10px 10px 10px 10px;
-  background: #67d7e5;
+  margin: 13px 0 10px -80px;
+  padding: 7px 7px 7px 7px;
+  /* background: #67d7e5; */
 }
 
 .button-square6 {
   position: absolute;
-  margin: 10px 0 10px -35px;
-  padding: 10px 10px 10px 10px;
-  background: #ffe083;
-}
-
-
-.ul-square {
-  margin: 0;
-  padding: 0;
-  border: 2px solid #eee;
-  list-style: none;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: #f80303;
+  margin: 13px 0 10px -55px;
+  padding: 7px 7px 7px 7px;
+  /* background: #ffe083; */
 }
 
 input.todo_text {
@@ -95,16 +88,6 @@ input.todo_text {
   background: #f80303;
 }
 
-.checkbox1 {
-  float: left;
-  margin: 10px 10px 10px 10px;
-  background-color: #c72626;
-  
-}
-
-.added {
-  background-color: #5eb3f6;
-}
 .todo {
   display: inline-block;
   margin: 20px auto;
@@ -116,64 +99,21 @@ input.todo_text {
   font-family: Verdana, Arial, sans-serif;
   font-size: 16px;
   color: #bbbbbb;
+  padding: 5px;
 }
+
 .todo_add {
   font-family: Verdana, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #eee;
-}
-
-.todo_add {
-
   margin: 5px 5px 5px 5px;
-  background: green;
-  border:2px solid green;
-}
-
-.todo_text {
-  padding: 5px;
+  background: #26a59a;
+  border: 2px solid #26a59a;
+  padding: 5px 10px 5px 10px;
 }
 
 .todo_list {
   text-align: left;
   list-style-type: none;
   padding-left: 0px;
-}
-
-.todo_list-item {
-  cursor: pointer;
-  padding: 5px;
-  line-height: 20px;
-}
-
-.todo_list-item:nth-child(even) {
-  background-color: #eee;
-}
-
-.todo_controls {
-margin: 5px 5px 5px 5px;
-}
-
-.h1-hide {
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 32px;
-  color: #c72626; 
-}
-
-.todo_list-item-text {
-  display: inline-block;
-  max-width: 720px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.todo_list-item-remove {
-  float: right;
-  opacity: 0.3;
-  margin-left: 15px;
-}
-
-.todo_list-item-remove:hover {
-  opacity: 1;
 }
