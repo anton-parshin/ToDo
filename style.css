@@ -112,6 +112,10 @@ input.todo_text {
   padding: 5px 10px 5px 10px;
 }
 
+.todo_add:disabled {
+  cursor: not-allowed;
+}
+
 .todo_list {
   text-align: left;
   list-style-type: none;

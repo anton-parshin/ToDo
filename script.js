@@ -4,7 +4,7 @@ $(document).ready(
     const colors = ['#ef6e69', '#f379a2', '#9170cb', '#5eb3f6', '#67d7e5', '#ffe083'];
     let counter = 0;
 
-    $(".todo_text").on('keyup', function (event) {
+    $(".todo_text").on('keydown', function (event) {
       if (event.which == 13) {
         addToDo()
       }
@@ -27,7 +27,7 @@ $(document).ready(
           id,
           value: toAdd,
           checked: false,
-          color: colors[Math.random() * colors.length ^ 0],
+          color: colors,
         })
         $('ul').append(
           `<input class="checkbox1"  id="${id}"type="checkbox"><li id="${id}" class='li1'>${toAdd}</li>`
