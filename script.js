@@ -16,11 +16,12 @@ $(document).ready(
 
     const addToDo = () => {
       const input = $(".todo_text");
-      if ($(input).val() != '') {
+         if ($(this).val() != '') {
         $('.todo_add').prop('disabled', false);
       }
       else ($('.todo_add').prop('disabled', true))
-      const toAdd = $('.todo_text').val();
+   
+      const toAdd = $(input).val();
       if (toAdd.trim()) {
         const id = counter;
         toDoArray.push({
@@ -35,7 +36,7 @@ $(document).ready(
 
           counter++;
       }
-
+  
       $(".checkbox1").on("click", (evt) => {
         const id = +evt.currentTarget.id;
         toDoArray.map(el => {
@@ -45,9 +46,9 @@ $(document).ready(
         })
       })
 
-      $(".todo_text").val('');
+      $(input).val('');
       const elems = $("li");
-
+     
       $(elems[elems.length - 1]).css("background-color", function () {
         if ($(this).text())
           return colors[Math.random() * colors.length ^ 0];
