@@ -27,7 +27,7 @@ $(document).ready(
           id,
           value: toAdd,
           checked: false,
-          color: colors,
+          color: colors[Math.random() * colors.length],
         })
         $('ul').append(
           `<input class="checkbox1"  id="${id}"type="checkbox"><li id="${id}" class='li1'>${toAdd}</li>`
@@ -52,8 +52,7 @@ $(document).ready(
         if ($(this).text())
           return colors[Math.random() * colors.length ^ 0];
       });
-    }
-
+    }    
 
     $(".button-square, .button-square2, .button-square3, .button-square4, .button-square5, .button-square6").on("click", (event) => {
 

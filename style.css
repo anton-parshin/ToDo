@@ -80,14 +80,6 @@ input.todo_text {
   padding: 10px 360px 10px 10px;
 }
 
-.checkbox_main {
-  background: #f80303;
-}
-
-.todo_list-div {
-  background: #f80303;
-}
-
 .todo {
   display: inline-block;
   margin: 20px auto;
